@@ -1,1 +1,15 @@
 # CS111FinalProject
+
+A description of the program and its features (including strategy of computer intelligence):
+The program displays a soccer game with four players and three defenders (computer players) on the half soccer field. A user can dribble the ball and pass it to the other three players. If the user completes five passes in a row, they will win the game. If a pass is failed or intercepted by a defender before completing five passes, the user will lose. The computer intelligence is incorporated into the game by having two possible results: a successful pass and an intercepted/failed pass. Depending on the distance between the ball and the player who is being passed to, there are different probabilities of successfully completing passes. If the distance is smaller, the user is more likely to complete a pass. A larger distance makes it harder to succeed. 
+
+Description of how it is constructed (class organization and how data is stored):
+There are two classes: Class Background and Class Game. Class Background draws the background for the game, the soccer field. Class Game plays a main role in organizing, making the game work, and incorporating a user input such as arrow and number keys. It includes drawing/moving players and the ball and the computer intelligence mentioned above. In Class Game, there is a method called “game”, which contains all storing of user data and responses to user keyboard input (including passing and movement patterns) and determines whether or not the user wins the game. The program has different codes, depending on different patterns of user input. 
+
+Current status of program:
+What works in the game: 1) moving players with/without the ball on the field in a restricted area for each player on the field so that the players do not overlap one another or run off the field, 2) passing using different probabilities, 3) determining win or loss of a user by counting the number of successful passes, and 4) showing the victory and loss screens depending on the results of the game. 
+
+What doesn't work well in the game: 1) the screen that comes up when a user wins the game glitches (although it looks cool, we did not mean for this to happen); 2) the user can move players and the ball even after the screen notifying the results of the game is shown (after the game is over). 
+
+Instructions for running the program:
+After the directions are shown on the screen, you click the “enter” key to start the game. You can move the ball and players by pressing the arrow keys. Each player has their own restricted area of the field, so you cannot move them when they are moving outside of those areas. You can make a pass by clicking the corresponding number key of the player whom you want to pass to. For example, if you want to pass the ball to Player 3, you click the “3” key on the keyboard. If you successfully complete five passes, you will win, and the victory screen will be shown. If your pass is failed or intercepted by the computers/defenders, you will lose, and the fail screen will be shown. 
